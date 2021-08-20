@@ -16,7 +16,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'preservim/nerdtree'
 Plugin 'itchyny/lightline.vim'
 Plugin 'frazrepo/vim-rainbow'
-
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'andymass/vim-matchup'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -43,3 +44,47 @@ let g:lightline = {
       \ 'colorscheme': 'darcula',
       \ }
 let g:rainbow_active = 1
+
+ab stdio #include <stdio.h>
+ab unistd #include <unistd.h>
+ab def #define
+
+ab ifndef #ifndef
+\<CR>
+\<CR>#endif
+
+ab incg #include <>
+ab incl #include ""
+ab ret return ();
+
+ab iff if()
+\<CR>{
+\<CR>
+\<CR>}
+
+ab ife if()
+\<CR>{
+\<CR>
+\<CR>}
+\<CR>else
+\<CR>{
+\<CR>
+\<CR>}
+
+ab main int main(void)
+\<CR>{
+\<CR> return (0);
+\<CR>}
+
+ab el else
+\<CR>{
+\<CR>
+\<CR>}
+
+ab whi while
+\<CR>{
+\<CR>
+\<CR>}
+
+
+
